@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/basil-1188/jenkins-todo.git'
+                git branch: 'main', url: 'https://github.com/basil-1188/jenkins-todo.git'
             }
         }
 
